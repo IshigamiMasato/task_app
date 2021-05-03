@@ -11,6 +11,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <h1>Ruby on Rails スケジュール管理アプリ</h1>
+    </header>
+    <div class = "main_container" >
+      <%= yield %>
+    </div>
+    <footer>
+      <p><%= render "shared/time_current" %></p>
+      <p><%= render "shared/records_count" %></p>
+    </footer>
   </body>
 </html>
